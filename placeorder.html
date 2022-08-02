@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>Place order</title>
+	<link rel="stylesheet" type="text/css" href="try.css">
+	<link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+<body>
+	<div class="box-1">
+		<h1>Velmen Engineers</h1>
+		<div class="meh">
+			<p>-</p>
+		</div>
+	</div>
+
+	<ul class="all">
+		<li class="all"><a href="index.html">Home</a></li>
+		<li class="all"><a href="about.html">About</a></li>
+		<li class="all"><a href="trackyourorder.html">Track your order</a></li>
+		<li class="all"><a href="more.html">More info</a></li>
+	</ul>
+	<br>
+	<div class="box-3">
+
+		<p>Kindly fill in your details</p>
+		
+		<form action="afile.php" method="POST" autocomplete="no">
+			<fieldset>
+				<legend><b>Personal Information:</b></legend>
+				<div>
+					<br>
+					<label>Company Name</label>
+					<br>
+					<input type="text" name="companyname">
+				</div>
+				<br>
+				<div>
+					<label>Email Id</label>
+					<br>
+					<input type="email" name="email" required autocomplete="on">
+				</div>
+				<br>
+				<div>
+					<label>Contact Number</label>
+					<br>
+					<input type="text" name="cno" size="10" required autocomplete="on">
+				</div>
+				<br>
+				<div>
+					<label>Contact Person Name</label>
+					<br>
+					<input type="text" name="name" required>
+				</div>
+				<br>
+				<div>
+					<label>Delivery Address</label>
+					<br>
+					<textarea name="message" required autocomplete="on"></textarea>
+				</div>
+				<br>
+			</fieldset>
+		
+		<br>
+			<fieldset>
+				<legend><b>Requirements:</b></legend>
+
+					<div>
+						<label>Coating:</label>
+						<br>
+						<select name=type>
+							<option value="copper">Copper</option>
+							<option value="polyurethane">Polyurethane</option>
+						</select>
+					</div>
+					<br>
+					<div>
+						<label>Diameter:</label>
+						<br>
+						<input type="text" name="diameter" placeholder="in mm">
+					</div>
+					<br>
+					<div>
+						<label>Length:</label>
+						<br>
+						<input type="text" name="length" placeholder="in mm">
+					</div>	
+					<br>
+					<div>
+						<label>Total Length:</label>
+						<br>
+						<input type="text" name="total" placeholder="in mm">
+					</div>
+					<br>
+					<div>
+						<label>Quantity:</label>
+						<br>
+						<input type="text" name="q1">
+					</div>
+					<br>
+					<legend><b>For Rubber Rollers:</b></legend>
+					<br>
+					<div>
+						<label>Coating:</label>
+						<br>
+						<select name=type>
+							<option value="nitrile">Nitrile</option>
+							<option value="natural">Natural</option>
+							<option value="neoprene">Neoprene</option>
+							<option value="silicone">Silicone</option>
+						</select>
+					</div>
+					<br>
+					<div>
+						<label>Diameter:</label>
+						<br>
+						<input type="text" name="diameter2" placeholder="in mm">
+					</div>
+					<br>
+					<div>
+						<label>Length:</label>
+						<br>
+						<input type="text" name="length2" placeholder="in mm">
+					</div>	
+					<br>
+					<div>
+						<label>Total Length:</label>
+						<br>
+						<input type="text" name="total2" placeholder="in mm">
+					</div>
+					<br>
+					<div>
+						<label>Quantity:</label>
+						<br>
+						<input type="text" name="q2">
+					</div>
+					<br>
+					<div>
+						<label>Special Request:</label>
+						<br>
+						<textarea name="req"></textarea>
+					</div>
+					
+					<p>*It is advisable to communicate with the product incharge for the exact requirements of the product*</p>
+					<button input="submit" name=submit onclick="alert('The Quotation will be emailed to you on the given id.')">Request for Quotation</button>
+			</fieldset>
+		</form>
+	</div>
+	<footer id="main-footer">
+		<p>Copyright &copy; 2021, Velmen Engineers</p>
+	</footer>
+</body>
+</html>
