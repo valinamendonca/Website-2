@@ -4,7 +4,7 @@ h1{
 	text-align: center;
 	font-family: arial, verdana, "Times New Roman";
 	text-transform: uppercase;
-	text-shadow: 2px 2px 2px sandybrown;
+	text-shadow: 2px 2px 2px blue;
 	word-spacing: 1em;
 	letter-spacing: 0.2em;
 	
@@ -15,7 +15,7 @@ h1{
 }
 
 .box-1{
-	border: 5px solid brown;
+	border: 5px solid navy;
 	text-align: right;
 }
 
@@ -29,7 +29,8 @@ h1{
 	
 	color: navy;
 	padding: 20px;
-	border: 5px solid brown;
+	background-color: rgb(114, 230, 255);
+	border: 5px solid navy;
 	
 }
 
@@ -42,7 +43,7 @@ ul.all{
   	padding: 0;
   	overflow: hidden;
 	list-style-type: none;
-	background-color: #e3c8b5;
+	background-color: lightblue;
 }
 
 li.all{
@@ -51,18 +52,18 @@ li.all{
 
 li.all a{
 	display: block;
-	color: brown;
+	color: navy;
 	text-align: center;
 	padding: 15px;
 	text-decoration: none;
 }
 
 li.all a:hover{
-	background-color: burlywood;
+	background-color: lightskyblue;
 }
 
 li.all a:active{
-	background-color: darkgrey;
+	background-color: lightseagreen;
 }
 footer{
 	text-align: center;
