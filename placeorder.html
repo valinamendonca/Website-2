@@ -3,6 +3,15 @@
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" >
 	<title>Place order</title>
+	<style>
+		input[type=text], input[type=email], textarea, select{
+			border: none;
+			border-bottom: 2px dotted blue;
+		}
+		div{
+			background-color: white;
+		}
+	</style>
 	<link rel="stylesheet" type="text/css" href="try.css">
 	<link rel="shortcut icon" href="images/favicon.ico" />
 </head>
@@ -26,124 +35,109 @@
 		<p>Kindly fill in your details</p>
 		
 		<form action="afile.php" method="POST" autocomplete="no">
-			<fieldset>
+			<div style="background-color: lightblue; padding: 10px; border-radius: 10px;">
 				<legend><b>Personal Information:</b></legend>
-				<div>
-					<br>
-					<label>Company Name</label>
-					<br>
-					<input type="text" name="companyname">
-				</div>
-				<br>
-				<div>
-					<label>Email Id</label>
-					<br>
-					<input type="email" name="email" required autocomplete="on">
-				</div>
-				<br>
-				<div>
-					<label>Contact Number</label>
-					<br>
+					<br><span style="padding-right: 50px;">
+					<label style="padding-right: 35px;">Company Name:</label >
+					<input type="text" name="companyname" required >
+					</span>
+					<span style="padding-right: 50px;">
+					<label style="padding-right: 55px;">   Email Id:</label>
+					<input type="email" name="email" required autocomplete="on"></span>
+				<span>
+					<label>Contact Number:</label>
+				
 					<input type="text" name="cno" size="10" required autocomplete="on">
-				</div>
-				<br>
-				<div>
-					<label>Contact Person Name</label>
-					<br>
+				</span>
+				<br><br>
+				<span style="padding-right: 50px;">
+					<label>Contact Person Name:</label>
+					
 					<input type="text" name="name" required>
-				</div>
-				<br>
-				<div>
-					<label>Delivery Address</label>
-					<br>
+				</span>
+				
+				<span>
+					<label>Delivery Address:</label>
+					
 					<textarea name="message" required autocomplete="on"></textarea>
-				</div>
-				<br>
-			</fieldset>
-		
+				</span>
+			</div>
+			
 		<br>
-			<fieldset>
-				<legend><b>Requirements:</b></legend>
-
-					<div>
+	
+				<b>Requirements:</b><br><br>
+				<div style="float: left; width: 48%; background-color: lightblue; padding: 10px; border-radius: 10px; margin-right: 5px;">
+				<b>For Copper Rollers:</b><br><br>
+					<span style="padding-right: 40px;">
 						<label>Coating:</label>
-						<br>
+						
 						<select name=type>
 							<option value="copper">Copper</option>
 							<option value="polyurethane">Polyurethane</option>
 						</select>
-					</div>
-					<br>
-					<div>
+					</span>
+				
+					<span style="padding-right: 40px;">
 						<label>Diameter:</label>
-						<br>
-						<input type="text" name="diameter" placeholder="in mm">
-					</div>
-					<br>
-					<div>
+						<input type="text" name="diameter" placeholder="in mm" size="15">
+					</span>
+					
+					<span>
 						<label>Length:</label>
-						<br>
-						<input type="text" name="length" placeholder="in mm">
-					</div>	
-					<br>
-					<div>
+						
+						<input type="text" name="length" placeholder="in mm" size="15">
+					</span>	
+					<br><br>
+					<span style="padding-right: 50px;">
 						<label>Total Length:</label>
-						<br>
+						
 						<input type="text" name="total" placeholder="in mm">
-					</div>
-					<br>
-					<div>
+					</span>
+					
+					<span>
 						<label>Quantity:</label>
-						<br>
+						
 						<input type="text" name="q1">
-					</div>
-					<br>
-					<legend><b>For Rubber Rollers:</b></legend>
-					<br>
-					<div>
+					</span>
+				</div>
+				<div style="float: left; width: 48%; background-color: lightblue; padding: 10px; border-radius: 10px;">
+					<legend><b>For Rubber Rollers:</b></legend><br>
+					
+					<span style="padding-right: 50px;">
 						<label>Coating:</label>
-						<br>
-						<select name=type>
+						<select name=type2>
 							<option value="nitrile">Nitrile</option>
 							<option value="natural">Natural</option>
 							<option value="neoprene">Neoprene</option>
 							<option value="silicone">Silicone</option>
 						</select>
-					</div>
-					<br>
-					<div>
+					</span>
+					<span style="padding-right: 50px;">
 						<label>Diameter:</label>
-						<br>
-						<input type="text" name="diameter2" placeholder="in mm">
-					</div>
-					<br>
-					<div>
+						<input type="text" name="diameter2" placeholder="in mm" size="15">
+					</span>
+					<span>
 						<label>Length:</label>
-						<br>
-						<input type="text" name="length2" placeholder="in mm">
-					</div>	
-					<br>
-					<div>
+						<input type="text" name="length2" placeholder="in mm" size="15">
+					</span>	<br><br>
+					<span style="padding-right: 50px;">
 						<label>Total Length:</label>
-						<br>
 						<input type="text" name="total2" placeholder="in mm">
-					</div>
-					<br>
-					<div>
+					</span>
+					<span>
 						<label>Quantity:</label>
-						<br>
 						<input type="text" name="q2">
-					</div>
+					</span>
 					<br>
-					<div>
-						<label>Special Request:</label>
-						<br>
+					</div>
+					<br><br><br><br>
+					<div style="margin-left:40%; background-color:lightblue; padding: 10px; overflow: hidden; margin-top: 50px; border-radius: 10px; width: 20%;">
+						<label><b>Special Request:</b></label>
 						<textarea name="req"></textarea>
 					</div>
 					
 					<p>*It is advisable to communicate with the product incharge for the exact requirements of the product*</p>
-					<button input="submit" name=submit onclick="alert('The Quotation will be emailed to you on the given id.')">Request for Quotation</button>
-			</fieldset>
+					<input type="submit" name=submit value="Request for Quotation" style="background-color: lightblue;"></input>
 		</form>
 	</div>
 	<footer id="main-footer">
